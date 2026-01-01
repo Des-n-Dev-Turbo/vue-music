@@ -58,3 +58,8 @@ export const registerSchema = {
   country: 'required|country_excluded:Antartica',
   tos: 'tos',
 };
+
+export const loginSchema = {
+  email: 'required|min:3|max:100|email',
+  password: 'required'
+}
